@@ -1,5 +1,5 @@
 <?php 
-    $giornata = [
+    $week = [
         [
             'casa' => 'Trento',
             'ospite' => 'Brescia',
@@ -48,6 +48,10 @@
             'punti casa' => 77,
             'punti ospite' => 70
         ],
-    ]
+    ];
+
+    foreach ($week as $match){
+        echo $match['casa']. " - " .$match['ospite']. " | " .$match['punti casa']. " - " .$match['punti ospite']. "<br>";
+    }
 
 ?>
